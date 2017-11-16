@@ -1,0 +1,1 @@
+{"context-menu":{"atom-text-editor":[{"label":"Toggle header--implementation","command":"header--implementation:toggle"}]},"menu":[{"label":"Packages","submenu":[{"label":"header--implementation","submenu":[{"label":"Toggle","command":"header--implementation:toggle"}]}]}]}

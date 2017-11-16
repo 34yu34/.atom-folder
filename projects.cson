@@ -1,0 +1,23 @@
+[
+  {
+    title: "atoms-language"
+    group: "Repo"
+    paths: [
+      "~/repositories/atoms"
+    ]
+  }
+  {
+    title: "Militaire"
+    group: "militaire"
+    paths: [
+      "~/Documents/militaire"
+    ]
+  }
+  {
+    title: "League Items"
+    group: "repo"
+    paths: [
+      "~/repositories/League_Items"
+    ]
+  }
+]

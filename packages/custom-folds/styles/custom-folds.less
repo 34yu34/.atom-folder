@@ -1,0 +1,67 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+atom-text-editor {
+	.custom-folds-start:not(.no-highlight) {
+		.syntax--source, .syntax--text {
+			.syntax--comment.syntax--block,
+			.syntax--comment.syntax--definition,
+			.syntax--comment.syntax--line {
+				color: @text-color-info;
+				border-top: 1px solid @text-color-info;
+
+				.syntax--leading-whitespace {
+					border-top: 1px solid @pane-item-background-color;
+				}
+			}
+		}
+
+		.syntax--text.syntax--plain {
+			color: @text-color-info;
+			border-top: 1px solid @text-color-info;
+
+			&.syntax--leading-whitespace,
+			.syntax--leading-whitespace {
+				border-top: 1px solid @pane-item-background-color;
+			}
+		}
+	}
+
+	.custom-folds-stop:not(.no-highlight) {
+		.syntax--source, .syntax--text {
+			.syntax--comment.syntax--block,
+			.syntax--comment.syntax--definition,
+			.syntax--comment.syntax--line {
+				color: @text-color-info;
+				border-bottom: 1px solid @text-color-info;
+
+				.syntax--leading-whitespace {
+					border-bottom: 1px solid @pane-item-background-color;
+				}
+			}
+		}
+
+		.syntax--text.syntax--plain {
+			color: @text-color-info;
+			border-bottom: 1px solid @text-color-info;
+
+			&.syntax--leading-whitespace,
+			.syntax--leading-whitespace {
+				border-bottom: 1px solid @pane-item-background-color;
+			}
+		}
+	}
+
+	.gutter:hover {
+		.line-number.custom-folds-start .icon-right {
+			visibility: visible;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

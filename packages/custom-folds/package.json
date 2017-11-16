@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-117817-16291-1f7ya9u/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-117817-16291-1f7ya9u/package.tgz",
+        "spec": "/tmp/d-117817-16291-1f7ya9u/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-117817-16291-um8us8"
+    ]
+  ],
+  "_from": "../d-117817-16291-1f7ya9u/package.tgz",
+  "_id": "custom-folds@1.9.5",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/custom-folds",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-117817-16291-1f7ya9u/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-117817-16291-1f7ya9u/package.tgz",
+    "spec": "/tmp/d-117817-16291-1f7ya9u/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117817-16291-1f7ya9u/package.tgz",
+  "_shasum": "3c82da15fab90fd7daa688901aa6812c9d36ca3f",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-117817-16291-1f7ya9u/package.tgz",
+  "_where": "/tmp/apm-install-dir-117817-16291-um8us8",
+  "bugs": {
+    "url": "https://github.com/bsegraves/custom-folds/issues"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.5"
+  },
+  "description": "Define custom tags for defining foldable blocks of code.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/bsegraves/custom-folds#readme",
+  "keywords": [
+    "fold",
+    "WebStorm",
+    "#region",
+    "editor-fold"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "custom-folds",
+  "optionalDependencies": {},
+  "readme": "# Custom Folds\n\nAn Atom plugin for defining custom markers for foldable regions.\n\nThis plugin was inspired by Visual Studio's treatment of C#'s `#region` tags.\n\n## Usage\n\nIn the plugin's settings, you can define custom text that identifies the start and end of a foldable section of code.\n\nBy default, a comment starting with `<editor-fold` identifies the start of a foldable region and another comment starting with `</editor-fold>` marks the end of that region. These default settings were only chosen because the author works on a team where a few \"special\" engineers insist on using JetBrain's WebStorm IDE. These tags allow both sets of engineers (those using Atom and those using WebStorm) to have the same foldable regions of code.\n\nBut you don't need to be working with people that insist on using WebStorm. You can configure the starting and ending tags to whatever you want. This allows you to create your own, custom, collapsible regions.\n\nThe folding is recursive, so you can have regions within regions within regions.\n\nHighlighting of these foldable tags is also enabled by default. This can be easily disabled from the package's Settings screen.\n\n![Image of highlighting](https://github.com/bsegraves/custom-folds/raw/master/highlight.png)\n\nThere is also an option to auto-fold files on load. This can be enabled from the package's settings.\n\n### Commands\n\n* `custom-folds:fold-here` (ctrl-shift-[) &mdash; Folds the region you're within.\n* `custom-folds:unfold-here` (ctrl-shift-]) &mdash; Unfolds the region you're within.\n* `custom-folds:fold-all` (ctrl-alt-shift-[) &mdash; Folds all regions recursively.\n* `custom-folds:unfold-all` (ctrl-alt-shift-]) &mdash; Unfolds all regions.\n* `custom-folds:fold-top-level` &mdash; Only fold the outer regions.\n* `custom-folds:toggle-fold` (ctrl-shift-\\\\) &mdash; Toggle folding at the cursor position.\n\n## Tips\n\nPersonally I use the following snippet for creating new foldable regions.\n\n```json\n\"editor-fold\":\n\t\"prefix\": \"// e\"\n\t\"body\": \"// <editor-fold desc='$1'>\\n// </editor-fold>\"`\n```\n\n## License\n\nSee [LICENSE](https://github.com/bsegraves/custom-folds/blob/master/LICENSE.md) for details.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsegraves/custom-folds.git"
+  },
+  "version": "1.9.5"
+}

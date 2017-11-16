@@ -1,0 +1,1 @@
+{".source.ruby":{"Map array":{"prefix":"map","body":"map { |${1:x}| $2 }"},"Each item":{"prefix":"each","body":"each { |${1:x}| $2 }"}}}

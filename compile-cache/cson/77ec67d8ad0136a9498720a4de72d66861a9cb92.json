@@ -1,0 +1,1 @@
+{".source.ruby":{"Function Def":{"prefix":"def","body":"def ${1:function}\n\t${2:text}\nend"}}}

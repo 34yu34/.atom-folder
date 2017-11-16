@@ -1,0 +1,1 @@
+{"source":".pdf-view {\n  overflow: auto;\n}\n.pdf-view .page-container {\n  margin-left: auto;\n  margin-right: auto;\n  display: block;\n}\n.pdf-view .page-container:not(:last-child) {\n  margin-bottom: 20px;\n}\n"}

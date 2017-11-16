@@ -1,0 +1,7 @@
+require "prime"
+
+primes = Prime.take_while { |x| x < 1_000_000 }.reverse
+p (0..primes.size - 20)
+    .map { |x| primes[x..(x + 20)] }
+    .map { |x| x.reduce(:+) }
+    .select { |x| x.prime? }

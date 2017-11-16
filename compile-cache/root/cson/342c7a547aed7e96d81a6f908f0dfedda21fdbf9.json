@@ -1,0 +1,1 @@
+{".platform-win32 atom-workspace, .platform-linux atom-workspace":{"f6":"gcc-make-run:compile-run","ctrl-f6":"gcc-make-run:run-options"},".platform-darwin atom-workspace":{"f6":"gcc-make-run:compile-run","cmd-f6":"gcc-make-run:run-options"}}
